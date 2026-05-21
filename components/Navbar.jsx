@@ -26,6 +26,7 @@ export default function Navbar() {
     router.push("/");
   };
 
+  // Navigation links
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/appoinments", label: "All Appointments" },
