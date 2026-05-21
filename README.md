@@ -1,6 +1,6 @@
 # DocAppoint — Doctor Appointment Booking System
 
-**Live Site:** Live Site will be visible here after the deployment
+**Live Site:** https://docappoint-client-ochre.vercel.app/
 
 ## About DocAppoint
 
