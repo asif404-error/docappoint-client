@@ -19,6 +19,7 @@ export default function Navbar() {
   const router = useRouter();
   const { data: session } = authClient.useSession();
 
+   // Handle user logout
   const handleLogout = async () => {
     await authClient.signOut();
     toast.success("Logged out successfully!");
