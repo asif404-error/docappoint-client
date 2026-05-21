@@ -56,6 +56,8 @@ export default function Navbar() {
                 />
               </span>
             </div>
+
+                        {/* Website title is here */}
             <span
               className="text-xl font-bold transition-colors duration-300"
               style={{
@@ -66,6 +68,8 @@ export default function Navbar() {
               Doc<span className="text-emerald-500">Appoint</span>
             </span>
           </Link>
+
+                        {/* Desktop Navigation Links from Here */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
@@ -83,6 +87,8 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
+
+                    {/* Desktop Authentication Buttons  */}
           <div className="hidden md:flex items-center gap-4">
             {session ? (
               <div className="flex items-center gap-3">
