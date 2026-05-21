@@ -1,16 +1,19 @@
 "use client";
+//react hooks
 import { useState, useEffect } from "react";
+
+// NextJS Components and hooks
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FiMenu, FiX, FiSun, FiMoon } from "react-icons/fi";
-import { authClient } from "@/lib/auth-client";
-import toast from "react-hot-toast";
+import { FiMenu, FiX } from "react-icons/fi"; //react-icons
+import { authClient } from "@/lib/auth-client"; //Authentication Client
+import toast from "react-hot-toast"; //Toast Notification
 import { useRouter } from "next/navigation";
-import Image from "next/image";
-import logo from "../public/DocAppointment-logo.png";
+import Image from "next/image"; //Next.js Image Coomponents
+import logo from "../public/DocAppointment-logo.png"; //Logo imported from Public folder
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); //State for Mobile Menu Toggle
 
   const pathname = usePathname();
   const router = useRouter();
