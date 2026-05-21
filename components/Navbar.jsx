@@ -123,8 +123,7 @@ export default function Navbar() {
           </div>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden"
-            style={{ color: "#374151" }}
+            className="md:hidden text-white"
           >
             {menuOpen ? <FiX size={26} /> : <FiMenu size={26} />}
           </button>
@@ -150,17 +149,6 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <button
-              onClick={toggleTheme}
-              className="flex items-center gap-2 text-sm font-medium py-3 border-b w-full transition-colors duration-200"
-              style={{
-                color: "#374151",
-                borderColor: "#e5e7eb",
-              }}
-            >
-              {isDark ? <FiSun size={16} /> : <FiMoon size={16} />}
-              {isDark ? "Light Mode" : "Dark Mode"}
-            </button>
 
             {session ? (
               <div className="flex items-center gap-3 pt-4">
