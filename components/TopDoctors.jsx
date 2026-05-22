@@ -10,14 +10,15 @@ export default function TopDoctors() {
   const [loading, setLoading] = useState(true);
   const { data: session } = authClient.useSession();
 
+  // // Fetched top-rated doctors from MongoDB component mounts
   useEffect(() => {
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/doctors/top-rated`)
       .then((res) => res.json())
       .then((data) => {
-        setDoctors(data);
-        setLoading(false);
+        setDoctors(data); // Store fetched doctors data into state
+        setLoading(false); // Stop loading spinner after data is loaded
       })
-      .catch(() => setLoading(false));
+      .catch(() => setLoading(false)); // Stop loading even if request fails
   }, []);
 
   return (
@@ -108,3 +109,7 @@ export default function TopDoctors() {
     </section>
   );
 }
+
+// features of this section:
+// > This section displays top rated doctors
+// > All data fetched dynamically from MongoDB
