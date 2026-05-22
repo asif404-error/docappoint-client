@@ -8,6 +8,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
+    // Main Footer Section
     <footer
       className="transition-colors duration-300"
       style={{
@@ -16,6 +17,7 @@ export default function Footer() {
         borderTop: "1px solid #e5e7eb",
       }}
     >
+      {/* Footer Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Brand Info section */}
