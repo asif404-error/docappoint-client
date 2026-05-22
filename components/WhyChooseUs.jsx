@@ -32,40 +32,49 @@ const features = [
   },
 ];
 
+// WhyChooseUs component section
 export default function WhyChooseUs() {
   return (
+    // Main section container
     <section className="w-full py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <span className="text-emerald-500 text-sm font-semibold uppercase tracking-widest">
             Why Us
           </span>
+          {/* Main Title Section */}
           <h2
             className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
             Why Choose DocAppoint?
           </h2>
+          {/* Subtitle Section */}
           <p className="text-gray-500 text-base max-w-xl mx-auto leading-relaxed">
             We are committed to making healthcare accessible, affordable and
             convenient for everyone.
           </p>
         </div>
+        {/* Responsive Feature Cards grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
+            // feature card styling with hover effects
             <div
               key={index}
               className="bg-gray-50 rounded-3xl p-8 text-center hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
             >
+              {/* Icon Container */}
               <div className="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-500 flex items-center justify-center mx-auto mb-5">
                 {feature.icon}
               </div>
+              {/* Feature Title */}
               <h3
                 className="text-lg font-bold text-gray-900 mb-3"
                 style={{ fontFamily: "Playfair Display, serif" }}
               >
                 {feature.title}
               </h3>
+              {/* Feature Description */}
               <p className="text-sm text-gray-500 leading-relaxed">
                 {feature.description}
               </p>
