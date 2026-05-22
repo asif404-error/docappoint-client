@@ -69,6 +69,7 @@ export default function HeroBanner() {
                   <p className="text-base sm:text-lg text-white text-opacity-75 max-w-2xl leading-relaxed">
                     {slide.subtitle}
                   </p>
+                  {/* Call to Action Buttons are here */}
                   <div className="flex flex-wrap gap-4 justify-center mt-4">
                     <Link href="appoinments" className="btn btn-blue">
                       Book Appointment
@@ -77,6 +78,7 @@ export default function HeroBanner() {
                       Browse Doctors
                     </Link>
                   </div>
+                  {/* Stats section is here */}
                   <div className="flex flex-wrap gap-10 justify-center mt-8">
                     {[
                       { value: "50+", label: "Expert Doctors" },
