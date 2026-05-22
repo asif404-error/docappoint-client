@@ -209,3 +209,10 @@ export default function RegisterClient() {
     </div>
   );
 }
+
+// Features are:
+// Email/Password Registration
+// Google Social Login
+// Password Validation
+// Toast Notification
+// Redirect after successful registration
