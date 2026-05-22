@@ -18,6 +18,7 @@ export default function Footer() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          {/* Brand Info section */}
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center shrink-0">
@@ -31,6 +32,7 @@ export default function Footer() {
                   />
                 </span>
               </div>
+              {/* Brand Title */}
               <span
                 className="text-xl font-bold transition-colors duration-300"
                 style={{
@@ -41,6 +43,7 @@ export default function Footer() {
                 Doc<span className="text-emerald-500">Appoint</span>
               </span>
             </div>
+            {/* This is Brand Description */}
             <p
               className="text-sm leading-relaxed transition-colors duration-300"
               style={{ color: "#6b7280" }}
@@ -49,6 +52,7 @@ export default function Footer() {
               Quality healthcare made simple and accessible.
             </p>
           </div>
+          {/* This is Quick Navigation Link Section */}
           <div>
             <h4 className="text-emerald-500 text-lg font-semibold mb-4">
               Quick Links
@@ -78,6 +82,7 @@ export default function Footer() {
             <h4 className="text-emerald-500 text-lg font-semibold mb-4">
               Follow Us
             </h4>
+            {/* This is Social Media Icons Section */}
             <div className="flex items-center gap-3 flex-wrap">
               {[
                 { icon: <FaFacebook size={18} />, href: "#" },
@@ -98,6 +103,7 @@ export default function Footer() {
                 </Link>
               ))}
             </div>
+            {/* This is CopyRight Text Section */}
             <p
               className="text-sm mt-6 transition-colors duration-300"
               style={{
