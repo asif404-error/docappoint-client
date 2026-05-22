@@ -10,7 +10,7 @@ export default function TopDoctors() {
   const [loading, setLoading] = useState(true);
   const { data: session } = authClient.useSession();
 
-  // // Fetched top-rated doctors from MongoDB component mounts
+  // Fetched top-rated doctors from MongoDB
   useEffect(() => {
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/doctors/top-rated`)
       .then((res) => res.json())
@@ -111,5 +111,9 @@ export default function TopDoctors() {
 }
 
 // features of this section:
-// > This section displays top rated doctors
-// > All data fetched dynamically from MongoDB
+// This section displays top rated doctors
+// All data fetched dynamically from MongoDB
+// Displays doctor image, specialty, hospital, experience, fee, and rating
+// Redirects logged-in users to appointment details
+// Redirects guests to login page
+// Fully responsive card layout
