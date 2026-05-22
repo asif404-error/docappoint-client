@@ -60,12 +60,14 @@ export default function HeroBanner() {
                     <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                     Trusted by 10,000+ Patients
                   </div>
+                  {/* Hero Title */}
                   <h1
                     className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight"
                     style={{ fontFamily: "Playfair Display, serif" }}
                   >
                     {slide.title}
                   </h1>
+                  {/* Hero Subtitle is Here */}
                   <p className="text-base sm:text-lg text-white text-opacity-75 max-w-2xl leading-relaxed">
                     {slide.subtitle}
                   </p>
