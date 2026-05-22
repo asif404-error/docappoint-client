@@ -9,15 +9,17 @@ import Image from "next/image";
 import logo from "../public/DocAppointment-logo.png";
 
 export default function RegisterClient() {
+  // Router for page navigation
   const router = useRouter();
   const [name, setName] = useState("");
-
+  // Form state management
   const [email, setEmail] = useState("");
   const [photoURL, setPhotoURL] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  // Password Validation System
   const validatePassword = (pass) => {
     if (pass.length < 6) {
       return "Password must be at least 6 characters!";
@@ -31,6 +33,7 @@ export default function RegisterClient() {
     return "";
   };
 
+  // Handle user registration with email and password
   const handleRegister = async (e) => {
     e.preventDefault();
     setError("");
@@ -43,6 +46,7 @@ export default function RegisterClient() {
 
     setLoading(true);
     try {
+      // create user account using better auth client
       const result = await authClient.signUp.email({
         name,
         email,
