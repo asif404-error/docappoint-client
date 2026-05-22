@@ -179,11 +179,14 @@ export default function RegisterClient() {
               required
               className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 text-sm focus:outline-none focus:border-emerald-400 transition-colors duration-200"
             />
+            {/* Validation Erro Message */}
             {error && <p className="text-red-500 text-xs mt-2">{error}</p>}
+            {/* Password Requirements */}
             <p className="text-gray-400 text-xs mt-2">
               Must be 6+ characters with uppercase and lowercase letters.
             </p>
           </div>
+          {/* Submit Button */}
           <button
             type="submit"
             disabled={loading}
@@ -192,7 +195,7 @@ export default function RegisterClient() {
             {loading ? "Registering..." : "Register"}
           </button>
         </form>
-
+              {/* Redirect to Login Page */}
         <p className="text-center text-sm text-gray-500 mt-6">
           Already have an account?{" "}
           <Link
