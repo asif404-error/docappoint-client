@@ -1,25 +1,30 @@
 import { FiShield, FiClock, FiStar, FiHeart } from "react-icons/fi";
 
+// Features data array for dynamically rendering cards
 const features = [
   {
+    // Security & trust feature
     icon: <FiShield size={28} />,
     title: "Verified Doctors",
     description:
       "All our doctors are thoroughly verified with valid medical licenses and years of proven experience.",
   },
   {
+    // Fast booking feature
     icon: <FiClock size={28} />,
     title: "Quick Booking",
     description:
       "Book your appointment in less than 2 minutes. No paperwork, no long queues, no hassle.",
   },
   {
+    // Ratings & reviews feature
     icon: <FiStar size={28} />,
     title: "Top Rated Care",
     description:
       "Read genuine patient reviews and ratings to choose the best doctor for your needs.",
   },
   {
+    // Patient-centered care feature
     icon: <FiHeart size={28} />,
     title: "Patient First",
     description:
